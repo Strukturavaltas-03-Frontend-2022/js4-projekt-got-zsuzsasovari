@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'GOT';
+    src: url(../fonts/Game\ of\ Thrones.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'GOT';
+}
+
+body{
+    background-image: url(../assets/site/mapblue.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    float: left;
+    width: 80%;
+}
+
+.flex-items{
+    width: 12%;
+    text-align: center;
+    overflow: hidden;
+    min-height: 120px;
+    min-width: 120px; 
+    font-size: 10px;
+}
+
+.flex-items:hover{
+    box-shadow: 0 30px 35px rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+}
+
+.clicked{
+    transform: scale(1.4);
+    box-shadow: none;
+    border-radius: 0;
+}
+
+aside{
+    float: right;
+    width: 20%;
+    background-color: rgb(33, 37, 41);
+    height: 800px;
+    right: 0;
+}
+
+.header{
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 30px;
+}
+
+.bio-box{
+    color: white;
+}
+
+.bio-img{
+    width: 80%;
+    height: 150px;
+    display: block;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.bio-name{
+    margin: 15px;
+    font-size: 10px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.bio-house{
+    display: inline;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    margin-right: 5px;
+}
+
+.bio-bio{
+    font-size: 10px;
+    margin: 15px;
+}
+
+.arrow{
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    font-weight: 700;
+    font-size: x-large;
+    display: inline;
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.search{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.input{
+    height: 30px;
+    width: 150px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    border: none;
+    font-size: 10px;
+}
+
+.search-btn{
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    font-size: 0.7rem;
+    margin: 0;
+    display: inline;
+    margin-right: -5px;
+    margin-bottom: -10px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width:700px) {
+    aside{
+        height: 1000px;
+    }
+    .header{
+        font-size: 10px;
+    }
+    .search{
+        width: 60px;
+    }   
+}
+
+@media (max-width:1250px) {
+    .arrow{
+        bottom: 50px;
+        right: 0;
+    }    
+}
